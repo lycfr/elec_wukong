@@ -1,0 +1,8 @@
+version: 3.2.0
+files:
+  - url: eewukong-win-3.2.0-x64.exe
+    sha512: Sg5bVaMTKJqxoq+PoKE5x3PhRrXQcnjZLZKGaU//JistHZsQUWOP+ub3XdYktB/ipJxANg8ZWoAagvBCQQ9Z/A==
+    size: 95464364
+path: eewukong-win-3.2.0-x64.exe
+sha512: Sg5bVaMTKJqxoq+PoKE5x3PhRrXQcnjZLZKGaU//JistHZsQUWOP+ub3XdYktB/ipJxANg8ZWoAagvBCQQ9Z/A==
+releaseDate: '2024-01-09T09:04:31.466Z'

@@ -1,0 +1,50 @@
+directories:
+  output: out
+  buildResources: build
+productName: eewukong
+appId: com.electron.eewukong
+copyright: wallace5303
+asar: true
+files:
+  - filter:
+      - '**/*'
+      - '!frontend/'
+      - '!run/'
+      - '!logs/'
+      - '!data/'
+extraResources:
+  - from: ./build/extraResources/
+    to: extraResources
+electronDownload:
+  mirror: https://npmmirror.com/mirrors/electron/
+nsis:
+  oneClick: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: ./build/icons/icon.ico
+  uninstallerIcon: ./build/icons/icon.ico
+  installerHeaderIcon: ./build/icons/icon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 悟空
+publish:
+  - provider: generic
+    url: https://github.com/wallace5303/electron-egg
+mac:
+  icon: ./build/icons/icon.icns
+  artifactName: ${productName}-${os}-${version}-${arch}.${ext}
+  target:
+    - dmg
+    - zip
+win:
+  icon: ./build/icons/icon.ico
+  artifactName: ${productName}-${os}-${version}-${arch}.${ext}
+  target:
+    - target: nsis
+linux:
+  icon: ./build/icons/icon.icns
+  artifactName: ${productName}-${os}-${version}-${arch}.${ext}
+  target:
+    - deb
+  category: Utility
+electronVersion: 13.6.9

@@ -1,0 +1,10 @@
+node_modules
+logs/
+run/
+.idea/
+package-lock.json
+data/
+.vscode/launch.json
+public/
+pnpm-lock.yaml
+out/win-unpacked
